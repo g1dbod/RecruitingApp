@@ -1,0 +1,77 @@
+@import './color.scss';
+
+.Header{
+  width: 100%;
+  height: 48px;
+  background-color: $col1;
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  padding: 0 30px;
+
+  .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+      font-size: 30px;
+    color: $col3;
+    }
+
+    .sorted{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .name{
+        font-size: 20px;
+        color: $col4;
+      }
+
+      select{
+        height: 100%;
+        background-color: transparent;
+        color: $col4;
+        font-size: 18px;
+        margin-left: 10px;
+
+        option{
+          background-color: $col1;
+        }
+      }
+    }
+  }
+
+}
+
+.Statistic {
+  width: 100%;
+  height: 300px;
+  background-color: $col4;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper{
+
+    font-size: 30px;
+
+    .count_block{
+      margin-bottom: 20px;
+    }
+
+    .salary_block{
+      display: flex;
+
+      .salary{
+        margin-right: 100px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
